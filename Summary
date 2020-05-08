@@ -1,0 +1,35 @@
+Preprocessing adalah tahap yang membutuhkan waktu paling banyak dalam pengerjaan
+tugas besar ini. Tahap ini memiliki tantangan tersendiri karena harus menyiapkan data agar
+siap digunakan untuk tahap selanjutnya. Tahap ini menjadi semakin penting karena jika
+dilakukan dengan benar, model yang dibangun akan memiliki akurasi tinggi. Dalam
+pengerjaan tugas besar ini dilakukan 2 teknik berbeda dalam preprocessing. Perbedaan
+teknik yang dimaksud adalah pada eksekusi asumsi yang mempengaruh kurang lebih 3.300
+baris perbedaan jumlah clean data.
+
+Preprocessing jika dikombinasikan dengan teknik reduksi dimensi yang tepat dapat
+meningkatkan performansi model yang akan dibangun. Setelah melakukan PCA pada kedua
+data hasil Teknik I dan Teknik II didapat bahwa data pada Teknik I lebih memencar
+dibanding Teknik II. Sekilas akan terlihat bahwa data Teknik I lebih banyak dari data Teknik
+II, padahal yang terjadi adalah kebalikannya. Disini kita bisa melihat kepadatan data sangat
+berpengaruh.
+
+Setelah melakukan preprocessing dan ekstraksi fitur, selanjutnya dilakukan pemberian
+label pada dataset dengan melakukan clustering. Label yang tercipta dari prosess clustering
+menurut saya adalah label yang menandakan rating untuk value of the product. Rating value
+of the product mengacu pada keseimbangan kualitas dari tiap aspek dengan harga yang
+diberikan. Label ini saya beri nama kolom ‘class’. Penambahan kolom ini saya lakukan pada
+data setelah scaling. Hal ini dilakukan karena seluruh algoritma yang akan digunakan 
+menerima masukan data berupa integer. Setelah dataset memiliki label, selanjutnya
+dilakukan klasifikasi dengan tiga model, yaitu Naive Bayes, KNN, dan Random Forest.
+
+Pada sub-bab Evaluasi telah kita lihat bahwa secara keseluruhan, model dengan
+menggunakan algoritma Random Forest memberikan performansi paling baik. Hal ini
+dikarenakan algoritma Random Forest yang menerapkan ensemble technique, yaitu teknik
+untuk membentuk ‘strong learners’ dari kumpulan ‘weak learners’. Namun bukan hanya
+pemilihan model, teknik preprocessing ternyata juga berpengaruh. Buktinya dapat kita lihat
+bahwa dalam setiap model, akurasi Teknik II selalu lebih tinggi. Hal ini membuktikan bahwa
+tidak selalu pengurangan baris dapat meningkatkan akurasi. Bisa jadi karena jumlah baris
+kurang, maka pemodelan data menjadi kurang akurat. Hal ini menjadi masuk akal karena jika
+kita kalikan seluruh nilai dari atribut ordinal saja, maka jumlah baris yang kita butuhkan
+masih kurang. Teknik 1 dengan 3.300 data lebih sedikit daripada Teknik II tentu saja menjadi
+kurang mampu memodelkan data dengan tepat.
