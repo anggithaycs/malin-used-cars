@@ -22,8 +22,7 @@ data setelah scaling. Hal ini dilakukan karena seluruh algoritma yang akan digun
 menerima masukan data berupa integer. Setelah dataset memiliki label, selanjutnya
 dilakukan klasifikasi dengan tiga model, yaitu Naive Bayes, KNN, dan Random Forest.
 
-Pada sub-bab Evaluasi telah kita lihat bahwa secara keseluruhan, model dengan
-menggunakan algoritma Random Forest memberikan performansi paling baik. Hal ini
+Secara keseluruhan, model dengan menggunakan algoritma Random Forest memberikan performansi paling baik. Hal ini
 dikarenakan algoritma Random Forest yang menerapkan ensemble technique, yaitu teknik
 untuk membentuk ‘strong learners’ dari kumpulan ‘weak learners’. Namun bukan hanya
 pemilihan model, teknik preprocessing ternyata juga berpengaruh. Buktinya dapat kita lihat
